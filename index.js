@@ -6,10 +6,10 @@ function validate(str) {
     }
 
     if (str[0] === 'A' && str.length >= 5) {
-        console.log(true);
+        return true;
     } else {
-        console.log(false);
+        return false;
     }
 }
 
-validate('aaaaadsa');
+console.log(validate('aaaaadsa'));

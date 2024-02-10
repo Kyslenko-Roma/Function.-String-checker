@@ -1,4 +1,4 @@
-function validate(str) {
+function isValidateString(str) {
     if (typeof str !== 'string'
         && str === ''
         && str === null) {
@@ -7,9 +7,7 @@ function validate(str) {
 
     if (str[0] === 'A' && str.length >= 5) {
         return true;
-    } else {
-        return false;
     }
 }
 
-console.log(validate('aaaaadsa'));
+console.log(isValidateString('aaaaadsa'));
